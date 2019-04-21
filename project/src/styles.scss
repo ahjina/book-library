@@ -1,0 +1,35 @@
+/* You can add global styles to this file, and also import other style files */
+@import "/assets/styles/fonts.scss";
+@import "/assets/styles/colors.scss";
+@import "/assets/styles/typoraphy.scss";
+
+body {
+  margin: 0;
+}
+
+button {
+  border: none;
+  background: none;
+}
+
+.form {
+  .form-row {
+    margin: 1em;
+    label {
+      display: block;
+      margin-bottom: 0.5em;
+      font-weight: 700;
+    }
+
+    input {
+      padding: 0.5em;
+      font-size: 1em;
+      width: 20em;
+      font-family: 'Crimson';
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+}

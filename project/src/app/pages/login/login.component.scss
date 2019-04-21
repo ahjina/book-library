@@ -1,0 +1,45 @@
+@import '../../../assets/styles/colors.scss';
+@import '../../../assets/styles/fonts.scss';
+@import '../../../assets/styles/typoraphy.scss';
+
+#login-page { 
+    background-image: url('/assets/img/login-background.jpg'); 
+    background-size: cover; 
+    height: calc(100vh); 
+    width: calc(100vw); 
+    overflow: hidden; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    #title {
+        @include title('ElMessiri-Bold', $light-orange, 5em, center);
+        text-shadow: 2px 2px $dark-blue;
+    }
+
+    .form {
+        font-family: 'Julius-Sans';
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        button {
+            font-family: 'Julius-Sans';
+            font-weight: 700;
+            border: 1px solid $dark-blue;
+            color: $dark-blue;
+            padding: 0.5em;
+            font-size: 1.5em;
+            cursor: pointer;
+            -webkit-transition: background 0.5s, color 0.5s; /* Safari */
+            transition: background 0.5s, color 0.5s;
+
+            &:hover {
+                color: #fff;
+                background: $dark-blue;
+                border-color: #fff;
+            }
+        }
+    }
+}
